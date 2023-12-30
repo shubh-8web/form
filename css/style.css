@@ -1,0 +1,110 @@
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        body{
+            height: 100vh;
+            background:lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .formmain{
+            width: 360px;
+            height: 400px;
+            background: white;
+            margin: 8% auto;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        form{
+            width: 280px;
+            position: absolute;
+            top: 100px;
+            left: 40px;
+            transition: 0.5s;
+        }
+
+        h3{
+            text-align: center;
+            text-transform:uppercase;
+            padding-bottom:50px;
+            color: grey;
+        }
+        form input{
+            width: 100%;
+            padding: 10px 5px;
+            margin: 5px 0;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            background-color: transparent;
+        }
+        ::placeholder{
+            color:#777;
+        }
+
+        .btn-box{
+            width: 100%;
+            margin: 30px auto;
+            text-align: center;
+        }
+        form button{
+            width: 110px;
+            height: 35px;
+            margin:0 10px;
+            background: linear-gradient(to right,#ff105f,#ffad06);
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            color: white;
+            cursor: pointer;
+        }
+        #form2{
+            left: 450px;
+            
+        }
+        #form3{
+            left: -450px;
+        }
+        .step-row{
+        width: 360px;
+        height: 40px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 -1px 5px -1px #000;
+        position: relative;
+        }
+        .step-col{
+            width: 120px;
+            text-align: center;
+            color: #333;
+            position: relative;
+        }
+        #progress{
+            width: 120px;
+            height:100%;
+            background: linear-gradient(to right,#ff105f,#ffad06);
+            position: absolute;
+            transition: 1s;
+        }
+        #progress::after{
+            content:'';
+            height:0;
+            width: 0;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            position: absolute;
+            right: -20px;
+            top: 0;
+            border-left: 20px solid #ffad06;
+        }
+        #form4{
+            top: -660px;
+            text-align: center;
+        }
